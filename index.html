@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyes de Conjuntos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leyes de Conjuntos</h1>
+        <div class="input-section">
+            <label for="conjuntoA">Conjunto A (ej: 1,2,3):</label>
+            <input type="text" id="conjuntoA" placeholder="Elementos separados por comas">
+            <label for="conjuntoB">Conjunto B (ej: 4,5,6):</label>
+            <input type="text" id="conjuntoB" placeholder="Elementos separados por comas">
+            <label for="conjuntoC">Conjunto C (opcional):</label>
+            <input type="text" id="conjuntoC" placeholder="Elementos separados por comas">
+        </div>
+
+        <div class="buttons-section">
+            <button onclick="aplicarLey('union')">Unión</button>
+            <button onclick="aplicarLey('interseccion')">Intersección</button>
+            <button onclick="aplicarLey('diferencia')">Diferencia</button>
+            <button onclick="aplicarLey('complemento')">Complemento</button>
+            <button onclick="aplicarLey('deMorgan')">De Morgan</button>
+            <button onclick="aplicarLey('distributiva')">Distributiva</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Resultado</h2>
+            <div id="resultado"></div>
+            <div id="diagramaVenn"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
